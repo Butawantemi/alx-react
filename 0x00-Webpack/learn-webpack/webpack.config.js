@@ -10,7 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, 'deploy'),
     },
     devServer: {
-        contentBase: 'deploy',
+        contentBase: './deploy',
         open: true,
     },
     plugins: [
