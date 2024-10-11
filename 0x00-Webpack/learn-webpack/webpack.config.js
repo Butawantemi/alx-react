@@ -2,18 +2,18 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-    plugins: [
-        new HtmlWebpackPlugin ({
-            title: 'Webpack Output'
-        })
-    ],
     entry: {
         main: path.resolve(__dirname, './src/app.js'),
     },
     output: {
         filename: '[name].bundle.js',
-        path: path.resolve(__dirname, 'deploy')
+        path: path.resolve(__dirname, 'deploy'),
     },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Webpack Output',
+        }),
+    ],
     module: {
         rules: [
             {
@@ -22,14 +22,14 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presents: ['@babel/present-env']
+                        presets: ['@babel/preset-env'],
                     },
                 },
             },
-            { 
-                test: /\.css$/, 
-                use: ["style-loader", "css-loader"] 
-            }
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'], 
+            },
         ],
     },
 };
