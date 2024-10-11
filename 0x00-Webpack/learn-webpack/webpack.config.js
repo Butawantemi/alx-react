@@ -9,6 +9,10 @@ module.exports = {
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'deploy'),
     },
+    devServer: {
+        contentBase: 'deploy',
+        open: true,
+    },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Webpack Output',
