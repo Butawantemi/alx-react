@@ -1,4 +1,4 @@
-import images from './image.png';
+import images from './logo.png';
 
 
 const img = document.createElement('img');
