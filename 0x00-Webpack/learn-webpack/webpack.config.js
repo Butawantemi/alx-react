@@ -23,9 +23,13 @@ module.exports = {
                     loader: 'babel-loader',
                     options: {
                         presents: ['@babel/present-env']
-                    }
-                }
+                    },
+                },
+            },
+            { 
+                test: /\.css$/, 
+                use: ["style-loader", "css-loader"] 
             }
-        ]
-    }
-}
+        ],
+    },
+};
