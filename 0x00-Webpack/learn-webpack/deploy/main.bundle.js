@@ -7,15 +7,16 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/app.js":
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("const component = __webpack_require__(/*! ./component */ \"./src/component.js\");\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack://learn-webpack/./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./component */ \"./src/component.js\");\n\ndocument.body.appendChild((0,_component__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n//# sourceURL=webpack://learn-webpack/./src/app.js?");
 
 /***/ }),
 
@@ -25,7 +26,6 @@ eval("const component = __webpack_require__(/*! ./component */ \"./src/component
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((text = 'Hello, webpack!') => {\n    const element = document.createElement('h1');\n    element.innerHTML = text;\n    return element;\n});\n\n//# sourceURL=webpack://learn-webpack/./src/component.js?");
 
 /***/ })
