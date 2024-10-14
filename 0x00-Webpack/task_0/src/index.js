@@ -1,4 +1,4 @@
-import $ from 'jQuery';
+import $ from 'jquery';
 
 // Creating paragraph elements.
 $(body).append('<p>Holberton Dashboard</p>')
