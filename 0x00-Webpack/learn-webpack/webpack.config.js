@@ -15,6 +15,7 @@ module.exports = {
         open: true
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             title: 'Webpack Output',
         }),
