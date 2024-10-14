@@ -10,7 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, 'deploy'),
     },
     devServer: {
-        contentBase: './deploy',
+        contentBase: path.join(__dirname, './deploy'),
         open: true,
         port: 8080
     },
