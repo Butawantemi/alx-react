@@ -6,8 +6,9 @@ $(body).append('<button>Click here to get started</button>')
 $(body).append('<p id="count"></p>')
 $(body).append('<p>Copyright - Holberton School</p>')
 
-const updateounter = () => {
+const updateCounter = () => {
     counter++;
-    $('#count').html(`${count} clicks on the button`)
-    
+    $('#count').html(`${count} clicks on the button`)  
 }
+
+$('button').on('click', _.debounce(updateCounter, 500));
